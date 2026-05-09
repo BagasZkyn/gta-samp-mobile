@@ -51,10 +51,8 @@ public class DialogManager {
 
     public ConstraintLayout mMainLayout;
     public View mDialogBody;
-    private View mDialogButtonNegative;
-    private TextView mDialogButtonNegativeText;
-    private View mDialogButtonPositive;
-    private TextView mDialogButtonPositiveText;
+    private com.google.android.material.button.MaterialButton mDialogButtonNegative;
+    private com.google.android.material.button.MaterialButton mDialogButtonPositive;
     private TextView mDialogCaption;
     private EditText mDialogInput;
     private View mDialogInputLayout;
@@ -122,8 +120,6 @@ public class DialogManager {
         this.mDialogListRecycler = (CustomRecyclerView) layout.findViewById(R.id.dialog_list_recycler);
         this.mDialogButtonPositive = layout.findViewById(R.id.button_positive);
         this.mDialogButtonNegative = layout.findViewById(R.id.button_negative);
-        this.mDialogButtonPositiveText = (TextView) layout.findViewById(R.id.button_positive_text);
-        this.mDialogButtonNegativeText = (TextView) layout.findViewById(R.id.button_negative_text);
 
         this.mAnimBtn = AnimationUtils.loadAnimation(this.activity, R.anim.scale);
         this.mAnimShow = AnimationUtils.loadAnimation(this.activity, R.anim.button_show_alpha);
@@ -338,11 +334,10 @@ public class DialogManager {
     public void loadButtons() {
         this.mDialogButtonPositive.setVisibility(View.VISIBLE);
         this.mDialogButtonNegative.setVisibility(View.VISIBLE);
-        this.mDialogButtonPositiveText.setText(this.mButtonPositive);
-        this.mDialogButtonNegativeText.setText(this.mButtonNegative);
+        this.mDialogButtonPositive.setText(this.mButtonPositive);
+        this.mDialogButtonNegative.setText(this.mButtonNegative);
         this.mDialogButtonPositive.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                view.startAnimation(DialogManager.this.mAnimBtn);
                 DialogManager dialogManager = DialogManager.this;
                 dialogManager.SendDialogResponse(1, dialogManager.mCurrentListitem, DialogManager.this.mCurrentInputtext);
             }
@@ -352,7 +347,6 @@ public class DialogManager {
         } else {
             this.mDialogButtonNegative.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    view.startAnimation(DialogManager.this.mAnimBtn);
                     DialogManager dialogManager = DialogManager.this;
                     dialogManager.SendDialogResponse(0, dialogManager.mCurrentListitem, DialogManager.this.mCurrentInputtext);
                 }

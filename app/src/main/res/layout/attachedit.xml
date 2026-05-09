@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:visibility="visible"
     android:id="@+id/attach_main_layot"
-    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    android:theme="@style/Theme.Material3.DayNight.NoActionBar"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +30,7 @@
                 android:id="@+id/attach_leftright_butt"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect"
+                android:background="@drawable/glass_background"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Position X"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_leftright_butt"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
                 android:id="@+id/attach_line2"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect"
+                android:background="@drawable/glass_background"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_topbott_icon"
                 app:layout_constraintTop_toTopOf="@+id/attach_topbott_icon" />
 
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Position Y"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
                 android:id="@+id/attach_line3"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect"
+                android:background="@drawable/glass_background"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_pushpull_icon"
                 app:layout_constraintTop_toTopOf="@+id/attach_pushpull_icon" />
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Position Z"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +126,7 @@
                 android:id="@+id/attach_line5"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect"
+                android:background="@drawable/glass_background"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_rot_iconX"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Rotation X"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line5"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -158,7 +158,7 @@
                 android:id="@+id/attach_line6"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect"
+                android:background="@drawable/glass_background"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_rot_iconY"
                 app:layout_constraintTop_toTopOf="@+id/attach_rot_iconY" />
 
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Rotation Y"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line6"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -190,14 +190,14 @@
                 android:id="@+id/attach_line7"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect" />
+                android:background="@drawable/glass_background" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Rotation Z"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line7"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -219,14 +219,14 @@
                 android:id="@+id/attach_line4"
                 android:layout_width="@dimen/_125sdp"
                 android:layout_height="@dimen/_17sdp"
-                android:background="@drawable/attach_black_round_rect" />
+                android:background="@drawable/glass_background" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
                 android:text="Scale"
-                android:textColor="@color/white"
+                android:textColor="@color/md_theme_dark_onSurface"
                 android:textSize="@dimen/_8sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/attach_line4"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -242,7 +242,7 @@
         android:layout_width="@dimen/_110sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_marginEnd="@dimen/_50sdp"
-        android:background="@drawable/attach_black_round_rect"
+        android:background="@drawable/glass_background"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout17">
@@ -256,29 +256,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/attach_left_butt"
                 android:layout_width="@dimen/_38sdp"
                 android:layout_height="@dimen/_27sdp"
-                android:background="@drawable/ic_buttoncolor"
+                app:backgroundTint="@color/md_theme_dark_primary"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 android:text="&lt;&lt;"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/md_theme_dark_onPrimary"
                 android:textSize="@dimen/_17sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/attach_right_button"
                 android:layout_width="@dimen/_38sdp"
                 android:layout_height="@dimen/_27sdp"
                 android:layout_marginStart="24dp"
-                android:background="@drawable/ic_buttoncolor"
+                app:backgroundTint="@color/md_theme_dark_primary"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 android:text="&gt;&gt;"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/md_theme_dark_onPrimary"
                 android:textSize="@dimen/_17sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/attach_left_butt" />
@@ -287,28 +287,28 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/attach_exit_butt"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_30sdp"
-        android:backgroundTint="#000000"
+        app:backgroundTint="@color/md_theme_dark_surfaceVariant"
         android:layout_marginRight="@dimen/_50sdp"
         android:text="EXIT"
-        android:textColor="@color/white"
+        android:textColor="@color/md_theme_dark_onSurfaceVariant"
         android:textSize="@dimen/_8sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout17" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/attach_save_butt"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_30sdp"
-        android:backgroundTint="#000000"
+        app:backgroundTint="@color/md_theme_dark_primary"
         android:text="SAVE"
         android:layout_marginLeft="@dimen/_100sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/md_theme_dark_onPrimary"
         android:textSize="@dimen/_8sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

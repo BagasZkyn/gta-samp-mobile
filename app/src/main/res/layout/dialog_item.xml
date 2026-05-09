@@ -1,89 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout 
-	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content" 
-	android:paddingEnd="48.0px"
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	xmlns:app="http://schemas.android.com/apk/res-auto">
-	
-    <ImageView 
-		android:id="@+id/item_bg"
-		android:layout_width="0.0dip" 
-		android:layout_height="0.0dip" 
-		android:scaleType="fitXY" 
-		app:layout_constraintBottom_toBottomOf="parent" 
-		app:layout_constraintEnd_toEndOf="parent" 
-		app:layout_constraintStart_toStartOf="parent" 
-		app:layout_constraintTop_toTopOf="parent" 
-		app:srcCompat="@drawable/ic_dialog_select" />
-	
-    <TextView 
-		android:textSize="@dimen/_8sdp"
-		android:textColor="#ffffffff" 
-		android:id="@+id/item_field1"
-		android:paddingTop="@dimen/_3sdp"
-		android:paddingBottom="@dimen/_3sdp"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-		android:text="Field1\u0009" 
-		android:maxLines="1" 
-		android:lines="1" 
-		android:singleLine="true" 
-		android:fontFamily="@font/roboto_regular" 
-		android:paddingEnd="@dimen/_5sdp"
-		android:layout_marginStart="@dimen/_4sdp"
-		app:layout_constraintStart_toStartOf="parent" 
-		app:layout_constraintTop_toTopOf="parent" />
-	
-    <TextView 
-		android:textSize="@dimen/_8sdp"
-		android:textColor="#ffffffff" 
-		android:id="@+id/item_field2"
-		android:paddingTop="@dimen/_3sdp"
-		android:paddingBottom="@dimen/_3sdp"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-		android:text="Field2\u0009" 
-		android:maxLines="1" 
-		android:lines="1" 
-		android:singleLine="true" 
-		android:fontFamily="@font/roboto_regular" 
-		android:paddingEnd="@dimen/_5sdp"
-		app:layout_constraintStart_toEndOf="@+id/item_field1"
-		app:layout_constraintTop_toTopOf="parent" />
-	
-    <TextView 
-		android:textSize="@dimen/_8sdp"
-		android:textColor="#ffffffff" 
-		android:id="@+id/item_field3"
-		android:paddingTop="@dimen/_3sdp"
-		android:paddingBottom="@dimen/_3sdp"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-		android:text="Field3\u0009" 
-		android:maxLines="1" 
-		android:lines="1" 
-		android:singleLine="true" 
-		android:fontFamily="@font/roboto_regular" 
-		android:paddingEnd="@dimen/_5sdp"
-		app:layout_constraintStart_toEndOf="@+id/item_field2"
-		app:layout_constraintTop_toTopOf="parent" />
-	
-    <TextView 
-		android:textSize="@dimen/_8sdp"
-		android:textColor="#ffffffff" 
-		android:id="@+id/item_field4"
-		android:paddingTop="@dimen/_3sdp"
-		android:paddingBottom="@dimen/_3sdp"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-		android:text="Field4\u0009" 
-		android:maxLines="1" 
-		android:lines="1" 
-		android:singleLine="true" 
-		android:fontFamily="@font/roboto_regular" 
-		android:paddingEnd="@dimen/_5sdp"
-		app:layout_constraintStart_toEndOf="@+id/item_field3"
-		app:layout_constraintTop_toTopOf="parent" />
-	
-</androidx.constraintlayout.widget.ConstraintLayout>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="48.0px"
+        android:background="?attr/selectableItemBackground"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/item_field1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Field1\t"
+            android:textColor="@color/md_theme_dark_onSurface"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_field2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Field2\t"
+            android:textColor="@color/md_theme_dark_onSurfaceVariant"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_field1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_field3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Field3\t"
+            android:textColor="@color/md_theme_dark_onSurfaceVariant"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_field2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_field4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Field4\t"
+            android:textColor="@color/md_theme_dark_onSurfaceVariant"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_field3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

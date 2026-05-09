@@ -181,4 +181,45 @@
     <color name="yellow">#fbc02d</color>
     <color name="yellow_active_switch">#ffffba08</color>
     <color name="orange">#ffef4711</color>
+    
+    <!-- Material 3 Green Palette -->
+    <color name="md_theme_light_primary">#006C4C</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#89F8C7</color>
+    <color name="md_theme_light_onPrimaryContainer">#002114</color>
+    <color name="md_theme_light_secondary">#4D6357</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#CFE9D9</color>
+    <color name="md_theme_light_onSecondaryContainer">#092016</color>
+    <color name="md_theme_light_tertiary">#3D6373</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#C1E8FB</color>
+    <color name="md_theme_light_onTertiaryContainer">#001F29</color>
+    <color name="md_theme_light_surface">#FBFDF9</color>
+    <color name="md_theme_light_onSurface">#191C1A</color>
+    <color name="md_theme_light_surfaceVariant">#DBE5DD</color>
+    <color name="md_theme_light_onSurfaceVariant">#404943</color>
+
+    <color name="md_theme_dark_primary">#6CDBAC</color>
+    <color name="md_theme_dark_onPrimary">#003825</color>
+    <color name="md_theme_dark_primaryContainer">#005138</color>
+    <color name="md_theme_dark_onPrimaryContainer">#89F8C7</color>
+    <color name="md_theme_dark_secondary">#B3CCBE</color>
+    <color name="md_theme_dark_onSecondary">#1F352A</color>
+    <color name="md_theme_dark_secondaryContainer">#354B40</color>
+    <color name="md_theme_dark_onSecondaryContainer">#CFE9D9</color>
+    <color name="md_theme_dark_tertiary">#A5CCDF</color>
+    <color name="md_theme_dark_onTertiary">#073543</color>
+    <color name="md_theme_dark_tertiaryContainer">#244C5B</color>
+    <color name="md_theme_dark_onTertiaryContainer">#C1E8FB</color>
+    <color name="md_theme_dark_surface">#191C1A</color>
+    <color name="md_theme_dark_onSurface">#E1E3DF</color>
+    <color name="md_theme_dark_surfaceVariant">#404943</color>
+    <color name="md_theme_dark_onSurfaceVariant">#BFC9C2</color>
+
+    <!-- Glassmorphism Colors -->
+    <color name="md_glass_bg_dark">#26005138</color> <!-- ~15% Dark Primary Container -->
+    <color name="md_glass_bg_light">#3389F8C7</color> <!-- ~20% Light Primary Container -->
+    <color name="md_glass_stroke_dark">#4DFFFFFF</color> <!-- ~30% White -->
+    <color name="md_glass_stroke_light">#33000000</color> <!-- ~20% Black -->
 </resources>
