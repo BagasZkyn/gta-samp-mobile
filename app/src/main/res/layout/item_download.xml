@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/md_glass_bg_dark"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/md_glass_stroke_dark"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_dl_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File Title"
+                    android:textAppearance="?attr/textAppearanceTitleSmall"
+                    android:textColor="@color/md_theme_dark_onSurface" />
+
+                <TextView
+                    android:id="@+id/tv_dl_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:textColor="@color/md_theme_dark_onSurfaceVariant"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <!-- Status Chip -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_dl_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum"
+                android:textSize="11sp"
+                app:chipBackgroundColor="@color/md_theme_dark_surfaceVariant"
+                app:chipCornerRadius="8dp"
+                app:chipMinHeight="28dp" />
+        </LinearLayout>
+
+        <!-- Progress bar (visible during download) -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:trackCornerRadius="4dp"
+            app:indicatorColor="@color/md_theme_dark_primary"
+            app:trackColor="@color/md_theme_dark_surfaceVariant" />
+
+        <!-- Size + Downloaded -->
+        <TextView
+            android:id="@+id/tv_dl_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 MB"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="@color/md_theme_dark_onSurfaceVariant"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dl_action"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/download_btn_start"
+                android:textSize="12sp"
+                app:backgroundTint="@color/md_theme_dark_primary"
+                app:cornerRadius="18dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dl_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/download_btn_delete"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="@color/md_theme_dark_error"
+                android:textColor="@color/md_theme_dark_error"
+                app:cornerRadius="18dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

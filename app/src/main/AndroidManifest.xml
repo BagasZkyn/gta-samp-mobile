@@ -33,7 +33,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:theme="@style/Theme.SAMPLauncher"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustNothing">
 
@@ -47,15 +47,20 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <!-- MainActivity с явным android:exported -->
+        <!-- MainActivity — ENTRY POINT (launcher) -->
         <activity
             android:name="com.samp.mobile.launcher.activity.MainActivity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.SAMPLauncher"
             android:windowSoftInputMode="adjustNothing"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
+        <!-- Game Activity — launched by MainActivity -->
         <activity
             android:name="com.samp.mobile.game.SAMP"
             android:screenOrientation="landscape"
@@ -63,11 +68,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
     </application>
 </manifest>
