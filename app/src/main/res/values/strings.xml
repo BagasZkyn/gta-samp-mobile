@@ -1,12 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TGRP</string>
+    <string name="app_name">Djava Roleplay</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- Bottom Nav Labels -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_servers">Servers</string>
+    <string name="nav_downloads">Downloads</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_welcome">Selamat Datang!</string>
+    <string name="dashboard_subtitle">Djava Roleplay — SA-MP Server</string>
+    <string name="dashboard_launch_game">🎮 Launch Game</string>
+    <string name="dashboard_main_server">Server Utama</string>
+    <string name="dashboard_players_online">Pemain Online</string>
+    <string name="dashboard_connect_now">Connect Sekarang</string>
+    <string name="dashboard_loading_server">Memuat info server…</string>
+    <string name="dashboard_server_offline">Server offline</string>
+    <string name="dashboard_files_ready">✅ Game files siap</string>
+    <string name="dashboard_files_missing">⚠️ Cache belum didownload</string>
+    <string name="dashboard_download_now">Download Sekarang</string>
+    <string name="dashboard_news_title">Berita &amp; Update</string>
+    <string name="dashboard_quick_join">Quick Join: 151.240.0.201:7798</string>
+
+    <!-- Server List -->
+    <string name="servers_title">Daftar Server</string>
+    <string name="servers_search_hint">Cari server…</string>
+    <string name="servers_filter_all">Semua</string>
+    <string name="servers_filter_favorites">Favorit</string>
+    <string name="servers_filter_low_ping">Ping Rendah</string>
+    <string name="servers_empty">Tidak ada server ditemukan</string>
+    <string name="servers_loading">Memuat daftar server…</string>
+    <string name="servers_error">Gagal memuat server. Coba lagi?</string>
+    <string name="servers_retry">Coba Lagi</string>
+    <string name="server_players">%1$d/%2$d pemain</string>
+    <string name="server_ping">%d ms</string>
+    <string name="server_connect">Connect</string>
+
+    <!-- Download Center -->
+    <string name="downloads_title">Download Center</string>
+    <string name="downloads_subtitle">Cache &amp; file game GTA:SA</string>
+    <string name="downloads_all_complete">✅ Semua file sudah didownload</string>
+    <string name="downloads_storage">Penyimpanan</string>
+    <string name="downloads_used">%s digunakan</string>
+    <string name="download_btn_start">Download</string>
+    <string name="download_btn_pause">Jeda</string>
+    <string name="download_btn_resume">Lanjutkan</string>
+    <string name="download_btn_delete">Hapus</string>
+    <string name="download_status_pending">Menunggu</string>
+    <string name="download_status_running">Downloading…</string>
+    <string name="download_status_paused">Dijeda</string>
+    <string name="download_status_complete">✅ Selesai</string>
+    <string name="download_status_failed">❌ Gagal</string>
+    <string name="download_progress">%1$s / %2$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_game_group">Game</string>
+    <string name="settings_graphics_group">Grafis</string>
+    <string name="settings_audio_group">Audio</string>
+    <string name="settings_about_group">Tentang Aplikasi</string>
+    <string name="settings_server_ip">Server IP Default</string>
+    <string name="settings_server_ip_desc">IP server yang digunakan saat Launch Game</string>
+    <string name="settings_hud_scale">Skala HUD</string>
+    <string name="settings_show_fps">Tampilkan FPS</string>
+    <string name="settings_vibration">Getaran</string>
+    <string name="settings_audio_enabled">Aktifkan Audio</string>
+    <string name="settings_audio_volume">Volume</string>
+    <string name="settings_version">Versi Aplikasi</string>
+    <string name="settings_discord">Discord Server</string>
+    <string name="settings_discord_url">https://discord.gg/djava</string>
+    <string name="settings_clear_cache">Hapus Cache</string>
+    <string name="settings_clear_cache_desc">Hapus semua file yang telah didownload</string>
 </resources>

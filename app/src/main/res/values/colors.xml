@@ -222,4 +222,9 @@
     <color name="md_glass_bg_light">#3389F8C7</color> <!-- ~20% Light Primary Container -->
     <color name="md_glass_stroke_dark">#4DFFFFFF</color> <!-- ~30% White -->
     <color name="md_glass_stroke_light">#33000000</color> <!-- ~20% Black -->
+
+    <!-- Error tokens -->
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
 </resources>
